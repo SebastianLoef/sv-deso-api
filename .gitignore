@@ -1,3 +1,6 @@
+azureapp/data_folder/
+commands
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
