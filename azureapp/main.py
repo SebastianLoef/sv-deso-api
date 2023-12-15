@@ -15,7 +15,7 @@ class Item(BaseModel):
 data = DataApp()
 
 
-@app.post("/get-deso-data/")
+@app.post("/send-data/")
 async def send_data(item: Item):
     out: str = data.get(item.deso)
     if out == "No data found for this deso":
