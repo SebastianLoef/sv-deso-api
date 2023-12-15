@@ -4,10 +4,11 @@ import os
 
 
 def main(
-    url="https://deso-scb.gentlesky-8e5d1207.westus2.azurecontainerapps.io/",
+    url="http://deso-scb.graygrass-fb2be12d.westus2.azurecontainerapps.io",
     data={"deso": "0114A0010"},
 ):
-    url = os.path.join(url, "get-deso-data")
+    url = os.path.join(url, "send-data/")
+    print("URL:", url)
     response = requests.post(url, json=data)
     print("Status Code:", response.status_code)
     print("Response JSON:", response.json())
