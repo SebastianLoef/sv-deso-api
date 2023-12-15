@@ -28,7 +28,6 @@ class DataApp:
 
     def _format_get(self, deso: str) -> pd.DataFrame:
         df = self.df[self.df["region"] == deso].iloc[:, 2:]
-        print(df)
         return df
 
     def get(self, deso: str) -> str:
